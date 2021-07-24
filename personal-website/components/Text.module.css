@@ -1,0 +1,135 @@
+/*
+  Stylesheet for the Text component. Every TextType has a corresponding
+  style of the same name.
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&display=swap');
+
+.body, .micro, .input, .large {
+  font-family: 'Nunito', sans-serif;
+}
+
+.h1, .nav, .h2, .h3, .action {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Headings */
+.h1 {
+  font-size:  min(42px, 3vw);
+  line-height: 56px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.h2 {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+/* Body Text */
+.body {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.large {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 200;
+}
+
+.small {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Special Text */
+.micro {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.input {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.action {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.action_small {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align:justify;
+}
+
+/* Colors */
+.darker_green {
+  color: #234025;
+}
+
+.dark_green {
+  color: #47704a;
+}
+
+.green {
+  color: #72a276;
+}
+
+.orange {
+  color: #f19a3e;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.black {
+  color: #000000;
+}
+
+.gray {
+  color: #838383;
+}
