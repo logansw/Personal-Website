@@ -3,12 +3,14 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Text from '../components/Text';
 import Logo from '../components/Logo';
+import Link from 'next/link';
+import NavBar from '../components/NavBar';
 
 export default function Home() {
   return(
     <div>
-
-      <Logo/>
+      <NavBar active="about"/>
+      <h1>About</h1>
     </div>
   );
 
