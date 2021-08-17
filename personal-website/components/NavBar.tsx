@@ -29,6 +29,12 @@ export default class NavBar extends React.Component<Props, State> {
         <Logo/>
         <div className={styles.gap}/>
         <div className={this.state.sidebar ? styles.sidebarActive : styles.links}>
+          <div className={styles.back} onClick={this.toggleSidebar}>
+              <Image  src="/x.svg"
+                      alt="Back"
+                      width={24}
+                      height={15}/>
+          </div>
           <div className={styles.gap}/>
           <Link href="/">
             <a className={this.props.active == "about" ? styles.active : styles.link}>About</a>
@@ -40,12 +46,6 @@ export default class NavBar extends React.Component<Props, State> {
             <a className={this.props.active == "contact" ? styles.active : styles.link}>Contact</a>
           </Link>
           <div className={styles.gap}/>
-          <div className={styles.back} onClick={this.toggleSidebar}>
-            <Image  src="/back.svg"
-                    alt="Back"
-                    width={24}
-                    height={15}/>
-          </div>
         </div>
         <div className={styles.menu} onClick={this.toggleSidebar}>
           <Image  src="/menu.svg"
@@ -54,7 +54,7 @@ export default class NavBar extends React.Component<Props, State> {
                   width={100}
                   height={100}/>
         </div>
-        <div className={this.state.sidebar ? styles.dim : styles.none} onClick={this.toggleSidebar}/>
+        <div className={this.state.sidebar ? styles.dim : styles.notDim} onClick={this.toggleSidebar}/>
       </div>
     );
   }
