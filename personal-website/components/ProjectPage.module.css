@@ -1,0 +1,11 @@
+.projectPage {
+  background-color: white;
+  border-radius: 40px;
+  position: absolute;
+  z-index: 20;
+  height: 10000px;
+}
+
+.header {
+
+}

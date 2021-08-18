@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  max-width: 1800px;
+  max-width: 1500px;
   align-items: center;
   margin: auto;
   padding-bottom: 120px;
@@ -13,4 +13,29 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 80%;
+}
+
+.dim {
+  background-color: #000000;
+  width: calc(100vw + 64px);
+  height: calc(100vh + 64px);
+  top: -64px;
+  left: -64px;
+  position: fixed;
+  z-index: 19;
+  opacity: 50%;
+  transition: opacity 350ms linear;
+}
+
+.notDim {
+  background-color: #000000;
+  width: calc(100vw + 64px);
+  height: calc(100vh + 64px);
+  top: -64px;
+  left: -64px;
+  position: fixed;
+  z-index: 19;
+  opacity: 0%;
+  transition: opacity 350ms linear;
+  pointer-events: none;
 }
