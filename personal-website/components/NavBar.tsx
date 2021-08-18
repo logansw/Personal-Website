@@ -29,9 +29,9 @@ export default class NavBar extends React.Component<Props, State> {
         <Logo/>
         <div className={styles.gap}/>
         <div className={this.state.sidebar ? styles.sidebarActive : styles.links}>
-          <div className={styles.back} onClick={this.toggleSidebar}>
+          <div className={styles.close} onClick={this.toggleSidebar}>
               <Image  src="/x.svg"
-                      alt="Back"
+                      alt="Close"
                       width={24}
                       height={15}/>
           </div>
