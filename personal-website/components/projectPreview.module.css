@@ -1,0 +1,47 @@
+@media only screen and (min-width: 1200px) {
+  .projectPreview {
+    padding: 80px;
+    background-color: white;
+    border-radius: 40px;
+    width: min-content;
+    height: min-content;
+    margin: 24px;
+  }
+
+  .img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 576px) {
+  .projectPreview {
+    padding: 70px;
+    background-color: white;
+    border-radius: 30px;
+    width: min-content;
+    height: min-content;
+    margin: 16px;
+  }
+
+  .img {
+    width: 128px;
+    height: 128px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .projectPreview {
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    width: min-content;
+    height: min-content;
+    margin: 8px;
+  }
+
+  .img {
+    width: 64px;
+    height: 64px;
+  }
+}
