@@ -3,6 +3,7 @@ import styles from '../styles/stuff.module.css'
 import NavBar from "../components/NavBar";
 import ProjectPreview from "../components/ProjectPreview";
 import ProjectPage from "../components/ProjectPage";
+import ProjectSection from "../components/ProjectSection";
 
 interface Props {
   // Nothing here at the moment
@@ -62,11 +63,92 @@ export default class Stuff extends React.Component<Props, State> {
         return null;
       case "personal website":
         return (
-          <ProjectPage  img="/Whaleshark Logo 2.svg"
-                        title="Personal Website"
-                        date="July 2021"
-                        color=""
-                        closePopup={() => this.closeProject()}></ProjectPage>
+          <div className={styles.pageViewport}>
+            <ProjectPage  img="/Whaleshark Logo 2.svg"
+                          title="Personal Website"
+                          date="July 2021 - Present"
+                          color="#F7F9D0"
+                          closePopup={() => this.closeProject()}>
+              <ProjectSection sectionHeader="TL;DR">
+                <p>The website you are on right now, silly! Mainly a for-fun project to practice my web dev skills and to make it easy to share my projects with friends and recruiters! Designed in Figma and developed with React.</p>
+              </ProjectSection>
+              <ProjectSection sectionHeader="Process"/>
+              <ProjectSection sectionHeader="1. Design" sectionSize="h3" callout={true}>
+                <p>The website you are on right now, silly! Mainly a for-fun project to practice my web dev skills and to make it easy to share my projects with friends and recruiters! Designed in Figma and developed with React.</p>
+              </ProjectSection>
+              <ProjectSection sectionHeader="2. Code" sectionSize="h3" callout={true}>
+                <p>The website you are on right now, silly! Mainly a for-fun project to practice my web dev skills and to make it easy to share my projects with friends and recruiters! Designed in Figma and developed with React.</p>
+              </ProjectSection>
+              <div className={styles.sectionPair}>
+                <ProjectSection sectionHeader="Links" sectionSize="h2" callout={false}>
+                  <p>Github</p>
+                  <p>Actual website</p>
+                </ProjectSection>
+                <div className={styles.flexgap}/>
+                <ProjectSection sectionHeader="Tools" sectionSize="h2" callout={false}>
+                  <p>React</p>
+                  <p>React</p>
+                  <p>React</p>
+                  <p>React</p>
+                </ProjectSection>
+                <div className={styles.flexgap}/>
+              </div>
+            </ProjectPage>
+          </div>
+        );
+      case "easybites":
+        return (
+          <div className={styles.pageViewport}>
+            <ProjectPage  img="/EasyBites.svg"
+                          title="EasyBites.us"
+                          date="January 2021 - Present"
+                          color="#72A276"
+                          closePopup={() => this.closeProject()}>
+              <ProjectSection sectionHeader="TL;DR">
+                <p>The website you are on right now, silly! Mainly a for-fun project to practice my web dev skills and to make it easy to share my projects with friends and recruiters! Designed in Figma and developed with React.</p>
+              </ProjectSection>
+            </ProjectPage>
+          </div>
+        );
+      case "project solitaire":
+        return (
+          <div className={styles.pageViewport}>
+            <ProjectPage  img="/Project Solitaire.svg"
+                          title="Project Solitaire"
+                          date="January 2021"
+                          color="#000000"
+                          closePopup={() => this.closeProject()}></ProjectPage>
+          </div>
+        );
+      case "naireative":
+        return (
+          <div className={styles.pageViewport}>
+            <ProjectPage  img="/NaireAtive.svg"
+                          title="NaireAtive Logo Design"
+                          date="December 2020"
+                          color="#253367"
+                          closePopup={() => this.closeProject()}></ProjectPage>
+          </div>
+        );
+      case "hop vehicle":
+        return (
+          <div className={styles.pageViewport}>
+            <ProjectPage  img="/Hop Vehicle.svg"
+                          title="Hop Vehicle"
+                          date="August 2020"
+                          color="#FF53A8"
+                          closePopup={() => this.closeProject()}></ProjectPage>
+          </div>
+        );
+      case "super spacebar":
+        return (
+          <div className={styles.pageViewport}>
+            <ProjectPage  img="/Super Spacebar.svg"
+                          title="Super Spacebar"
+                          date="July 2020"
+                          color="#E14C63"
+                          closePopup={() => this.closeProject()}></ProjectPage>
+          </div>
         );
       default:
         return null;
