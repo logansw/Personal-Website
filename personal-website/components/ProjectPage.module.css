@@ -1,11 +1,56 @@
 .projectPage {
+  animation: slidein 350ms ease-out;
   background-color: white;
   border-radius: 40px;
-  position: absolute;
-  z-index: 20;
-  height: 10000px;
+  display: flex;
+  max-width: 1200px;
+  margin: 128px 0px;
+}
+
+.colorSplash {
+  height: 100%;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  width: 80px;
+}
+
+.main {
+  padding: 64px;
+  width: 100%;
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 64px;
+}
 
+.close {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.titlePair {
+  margin-left: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.h3 {
+  margin: 0;
+  font-weight: 100;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100vh;
+  }
+  to {
+    margin-top: 128px;
+  }
 }
