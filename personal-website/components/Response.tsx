@@ -4,7 +4,7 @@ import Image from "next/image"
 
 interface Props {
   text: string,
-  clickHandler: any,
+  clickHandler?: any,
 }
 
 export default class Response extends React.Component<Props> {

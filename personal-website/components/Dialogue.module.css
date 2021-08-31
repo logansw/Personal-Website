@@ -57,3 +57,13 @@
 .relative {
   position: relative;
 }
+
+.clickable {
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+}
+
+.clickable:hover {
+  transition: box-shadow 0.2s;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+}

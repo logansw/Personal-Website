@@ -1,19 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css'
 import NavBar from '../components/NavBar';
 import Dialogue from '../components/Dialogue';
 import Response from '../components/Response';
 
-type Message = {id: string, logan: string, user: Response[], reply: string, next: string};
-type Response = {text: string, next: string};
+type Message = {id: string, logan: string, user: ResponseData[], reply: string, next: string};
+type ResponseData = {text: string, next: string};
 let dialogue: Message;
 
 interface State {
   dialogue: Message
 }
 
-const section2responses: {text: string, next: string}[] = [
+const section2responses: ResponseData[] = [
   {text: "Cool! I want to see!", next: "3a.1"},
   {text: "What kinds of stuff?", next: "3b.1"},
   {text: "Stuff is great.", next: "3c.1"}
@@ -82,7 +83,7 @@ const messageData: Message[] = [
   },
   {
     id: "2c.2",
-    logan: "Anyways, my name is Logan Wang, I'm a CSE student at UW, and I like to make stuff!",
+    logan: "Anyway, my name is Logan Wang, I'm a CSE student at UW, and I like to make stuff!",
     user: section2responses,
     reply: "Corners are great.",
     next: "2c.2" // No change
@@ -110,7 +111,7 @@ const messageData: Message[] = [
   },
   {
     id: "3b.2",
-    logan: "Please take a look around to find out :)",
+    logan: "Take a look around to find out :)",
     user: [{text: "Okidoki", next: "/stuff"}],
     reply: "What kinds of stuff?",
     next: "3b.2" // No change
@@ -170,15 +171,27 @@ export default class Home extends React.Component<{}, State> {
   }
 
   generateResponses() {
-    const responses: Response[] = this.state.dialogue.user;
+    const responses: ResponseData[] = this.state.dialogue.user;
 
-    return (
-      <div className={styles.responses}>
-        {responses.map((response: Response) =>  <div className={styles.response}>
-                                                  <Response text={response.text} clickHandler={() => this.advanceDialogue(response.next)} />
-                                                </div>)}
-      </div>
-    );
+    if (responses.length === 1) {
+      return (
+        <div className={styles.response}>
+          <Link href="/stuff" passHref>
+            <a>
+              <Response text={responses[0].text} />
+            </a>
+          </Link>
+        </div>
+      );
+    } else {
+      return (
+        <div className={styles.responses}>
+          {responses.map((response: ResponseData) =>  <div className={styles.response}>
+                                                        <Response text={response.text} clickHandler={() => this.advanceDialogue(response.next)} />
+                                                      </div>)}
+        </div>
+      );
+    }
   }
 
   getMessage(id: string) {

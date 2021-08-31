@@ -36,7 +36,7 @@ export default class Dialogue extends React.Component<Props> {
   renderLoganResponse() {
     if (this.props.clickable) {
       return (
-        <div className={styles.logan} onClick={this.props.clickHandler}>
+        <div className={[styles.logan, styles.clickable].join(' ')} onClick={this.props.clickHandler}>
           <div className={styles.text}>
             {this.props.text}
           </div>
