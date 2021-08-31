@@ -1,0 +1,59 @@
+.dialogue {
+  max-width: 600px;
+  width: 80%;
+  margin: auto;
+}
+
+.userResponse {
+  background-color: #FFBE73;
+  position: absolute;
+  right: 0px;
+  top: -24px;
+  padding: 16px 20px;
+  border-radius: 100px;
+}
+
+.logan {
+  display: flex;
+  background-color: white;
+  padding: 32px 48px;
+  border-radius: 40px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.text {
+  font-size: 2.0rem;
+}
+
+.arrow {
+  align-self: flex-end;
+  min-width: 32px;
+  animation: breathe ease-in-out 3s infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform: translateY(8px);
+  }
+
+  45% {
+    transform: translateY(8px);
+  }
+
+  55% {
+    transform: translateY(16px);
+  }
+
+  65% {
+    transform: translateY(8px);
+  }
+
+  100% {
+    transform: translateY(8px);
+  }
+}
+
+.relative {
+  position: relative;
+}
