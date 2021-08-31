@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import ProjectPreview from "../components/ProjectPreview";
 import ProjectPage from "../components/ProjectPage";
 import ProjectSection from "../components/ProjectSection";
+import Chip from "../components/Chip";
 
 interface Props {
   // Nothing here at the moment
@@ -70,26 +71,35 @@ export default class Stuff extends React.Component<Props, State> {
                           color="#F7F9D0"
                           closePopup={() => this.closeProject()}>
               <ProjectSection sectionHeader="TL;DR">
-                <p>The website you are on right now, silly! Mainly a for-fun project to practice my web dev skills and to make it easy to share my projects with friends and recruiters! Designed in Figma and developed with React.</p>
+                <div>The website you are on right now! Mainly a for-fun project to practice my web dev skills and to make it easy to share my projects with friends and recruiters. Designed in Figma and developed with React.</div>
               </ProjectSection>
               <ProjectSection sectionHeader="Process"/>
               <ProjectSection sectionHeader="1. Design" sectionSize="h3" callout={true}>
-                <p>The website you are on right now, silly! Mainly a for-fun project to practice my web dev skills and to make it easy to share my projects with friends and recruiters! Designed in Figma and developed with React.</p>
+                <div>The website you are on right now, silly! Mainly a for-fun project to practice my web dev skills and to make it easy to share my projects with friends and recruiters! Designed in Figma and developed with React.</div>
               </ProjectSection>
               <ProjectSection sectionHeader="2. Code" sectionSize="h3" callout={true}>
-                <p>The website you are on right now, silly! Mainly a for-fun project to practice my web dev skills and to make it easy to share my projects with friends and recruiters! Designed in Figma and developed with React.</p>
+                <div>The website you are on right now, silly! Mainly a for-fun project to practice my web dev skills and to make it easy to share my projects with friends and recruiters! Designed in Figma and developed with React.</div>
               </ProjectSection>
               <div className={styles.sectionPair}>
                 <ProjectSection sectionHeader="Links" sectionSize="h2" callout={false}>
-                  <p>Github</p>
-                  <p>Actual website</p>
+                  <ul>
+                    <li>
+                      <a href="https://github.com/logansw/Personal-Website">Github</a>
+                    </li>
+                    <li>
+                      <a href="http://localhost:3000/">Actual website</a>
+                    </li>
+                  </ul>
                 </ProjectSection>
                 <div className={styles.flexgap}/>
                 <ProjectSection sectionHeader="Tools" sectionSize="h2" callout={false}>
-                  <p>React</p>
-                  <p>React</p>
-                  <p>React</p>
-                  <p>React</p>
+                  <div className={styles.row}>
+                    <Chip text="React w/ TypeScript" />
+                    <div className={styles.chipGap} />
+                    <Chip text="Figma" />
+                    <div className={styles.chipGap} />
+                    <Chip text="CSS Modules" />
+                  </div>
                 </ProjectSection>
                 <div className={styles.flexgap}/>
               </div>
