@@ -1,0 +1,22 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.flexTop {
+  flex: 1;
+}
+
+.flexBot {
+  flex: 2;
+}
+
+.smallGap {
+  height: 24px;
+}
+
+.button {
+  width: fit-content;
+  margin: auto;
+}

@@ -1,6 +1,8 @@
 import React from "react";
+import styles from "../styles/Contact.module.css";
 import NavBar from "../components/NavBar";
 import Dialogue from "../components/Dialogue";
+import Response from "../components/Response";
 
 interface State {
   messageIndex: number
@@ -29,24 +31,30 @@ export default class Contact extends React.Component<{}, State> {
 
   render() {
     let cleanString = contactData[this.state.messageIndex];
-    // Clickable check
-    let clickable: boolean = contactData[this.state.messageIndex].match(endRegex) === null;
-    if (!clickable) {
-      cleanString = cleanString.replace(endRegex, '');
-    }
     // Bold check
     let bold: boolean = contactData[this.state.messageIndex].match(boldRegex) !== null;
     if (bold) {
       cleanString = cleanString.substr(1, cleanString.length - 2);
     }
+    // END check
+    let clickable: boolean = contactData[this.state.messageIndex].match(endRegex) === null;
+    if (!clickable) {
+      cleanString = cleanString.replace(endRegex, '');
+    }
     return(
-      <div>
+      <div className={styles.contact}>
         <NavBar active="contact"/>
+        <div className={styles.flexTop} />
         <Dialogue text={cleanString}
                   userResponse=""
                   clickHandler={this.increment}
                   clickable={clickable}
                   bold={bold}/>
+        <div className={styles.smallGap} />
+        <div className={styles.button}>
+          <Response text="Contact"/>
+        </div>
+        <div className={styles.flexBot} />
       </div>
     );
   }
