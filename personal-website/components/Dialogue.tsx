@@ -7,6 +7,7 @@ interface Props {
   userResponse: string,
   clickHandler: any,
   clickable?: boolean,
+  bold?: boolean,
 }
 
 export default class Dialogue extends React.Component<Props> {
@@ -35,8 +36,15 @@ export default class Dialogue extends React.Component<Props> {
 
   renderLoganResponse() {
     if (this.props.clickable) {
+      let styleArr = [];
+      styleArr.push(styles.logan);
+      styleArr.push(styles.clickable);
+      if (this.props.bold) {
+        styleArr.push(styles.bold);
+      }
+
       return (
-        <div className={[styles.logan, styles.clickable].join(' ')} onClick={this.props.clickHandler}>
+        <div className={styleArr.join(' ')} onClick={this.props.clickHandler}>
           <div className={styles.text}>
             {this.props.text}
           </div>
