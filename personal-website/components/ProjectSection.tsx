@@ -29,7 +29,7 @@ export default class ProjectSection extends React.Component<Props> {
       return (
         <div className={styles.callout}>
           <div className={styles.bar}/>
-          <div>
+          <div className={styles.text}>
             <div className={header}>{this.props.sectionHeader}</div>
             {this.props.children}
           </div>

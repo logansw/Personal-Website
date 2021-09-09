@@ -10,7 +10,7 @@
 }
 
 .bar {
-  width: 10px;
+  width: 4px;
   background-color: black;
   border-radius: 4px;
   margin-right: 24px;
@@ -26,4 +26,8 @@
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 12px;
+}
+
+.text {
+  width: 100%;
 }

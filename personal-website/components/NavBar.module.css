@@ -37,6 +37,7 @@
 @media only screen and (max-width: 1200px) and (min-width: 576px) {
   .navBar {
     margin: 40px;
+    margin-bottom: 0px;
   }
 
   .link + .link, .active + .link, .link + .active {
@@ -63,6 +64,7 @@
 @media only screen and (max-width: 576px) {
   .navBar {
     margin: 20px 24px;
+    margin-bottom: 0px;
   }
 
   .menu {

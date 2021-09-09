@@ -143,25 +143,23 @@ export default class Home extends React.Component<{}, State> {
 
   render() {
     return(
-      <div>
-        <NavBar active="about"/>
-        <div className={styles.about}>
-          <div className={styles.flexGap} />
-          <div className={styles.pfp}>
-            <Image  src="/PFP Circle.png"
-                    alt="Logan"
-                    width={240}
-                    height={240}/>
-          </div>
-          <Dialogue text={this.state.dialogue.logan}
-                    userResponse={this.state.dialogue.reply}
-                    clickHandler={() => this.advanceDialogue(this.state.dialogue.next)}
-                    clickable={this.state.dialogue.user.length == 0} />
-          <div className={styles.responses}>
-            {this.generateResponses()}
-          </div>
-          <div className={styles.flexGap} />
+      <div className={styles.about}>
+        <NavBar active="about" />
+        <div className={styles.flexTop} />
+        <div className={styles.pfp}>
+          <Image  src="/PFP Circle.png"
+                  alt="Logan"
+                  width={240}
+                  height={240} />
         </div>
+        <Dialogue text={this.state.dialogue.logan}
+                  userResponse={this.state.dialogue.reply}
+                  clickHandler={() => this.advanceDialogue(this.state.dialogue.next)}
+                  clickable={this.state.dialogue.user.length == 0} />
+        <div className={styles.responses}>
+          {this.generateResponses()}
+        </div>
+        <div className={styles.flexBot} />
       </div>
     );
   }
