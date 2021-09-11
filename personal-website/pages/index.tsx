@@ -184,7 +184,7 @@ export default class Home extends React.Component<{}, State> {
     } else {
       return (
         <div className={styles.responses}>
-          {responses.map((response: ResponseData) =>  <div className={styles.response}>
+          {responses.map((response: ResponseData) =>  <div key={response.text} className={styles.response}>
                                                         <Response text={response.text} clickHandler={() => this.advanceDialogue(response.next)} />
                                                       </div>)}
         </div>
