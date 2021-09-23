@@ -74,9 +74,32 @@ export default class Stuff extends React.Component<Props, State> {
                           date="July 2021 - Present"
                           color="#F7F9D0"
                           closePopup={() => this.closeProject()}>
-              <ProjectSection sectionHeader="TL;DR">
+              <ProjectSection sectionHeader="Description">
                 <div>The website you are on right now! Mainly a for-fun project to practice my web dev skills and to make it easy to share my projects with friends and recruiters. Designed in Figma and developed with React.</div>
               </ProjectSection>
+              <div className={styles.sectionPair}>
+                <ProjectSection sectionHeader="Links" sectionSize="h2" callout={false}>
+                  <ul>
+                    <li>
+                      <a href="https://github.com/logansw/Personal-Website">Github</a>
+                    </li>
+                    <li>
+                      <a href="http://localhost:3000/">Actual website</a>
+                    </li>
+                  </ul>
+                </ProjectSection>
+                <div className={styles.flexGap}/>
+                <ProjectSection sectionHeader="Tools" sectionSize="h2" callout={false}>
+                  <div className={styles.row}>
+                    <Chip text="React w/ TypeScript" />
+                    <div className={styles.chipGap} />
+                    <Chip text="Figma" />
+                    <div className={styles.chipGap} />
+                    <Chip text="CSS Modules" />
+                  </div>
+                </ProjectSection>
+                <div className={styles.flexGap}/>
+              </div>
               <ProjectSection sectionHeader="Screenshots"/>
               <ProjectSection sectionHeader="1. About Section" sectionSize="h3" callout={true}>
                 <div>Early on in the design I settled on this dialogue system idea as a fun, conversational way to introduce myself. I had a lot of fun designing these pages 😀!</div>
@@ -112,29 +135,6 @@ export default class Stuff extends React.Component<Props, State> {
                         width={3033}
                         height={3397}/>
               </ProjectSection>
-              <div className={styles.sectionPair}>
-                <ProjectSection sectionHeader="Links" sectionSize="h2" callout={false}>
-                  <ul>
-                    <li>
-                      <a href="https://github.com/logansw/Personal-Website">Github</a>
-                    </li>
-                    <li>
-                      <a href="http://localhost:3000/">Actual website</a>
-                    </li>
-                  </ul>
-                </ProjectSection>
-                <div className={styles.flexGap}/>
-                <ProjectSection sectionHeader="Tools" sectionSize="h2" callout={false}>
-                  <div className={styles.row}>
-                    <Chip text="React w/ TypeScript" />
-                    <div className={styles.chipGap} />
-                    <Chip text="Figma" />
-                    <div className={styles.chipGap} />
-                    <Chip text="CSS Modules" />
-                  </div>
-                </ProjectSection>
-                <div className={styles.flexGap}/>
-              </div>
             </ProjectPage>
           </div>
         );
@@ -146,9 +146,43 @@ export default class Stuff extends React.Component<Props, State> {
                           date="January 2021 - Present"
                           color="#72A276"
                           closePopup={() => this.closeProject()}>
-              <ProjectSection sectionHeader="TL;DR">
+              <ProjectSection sectionHeader="Description">
                 <div>EasyBites is a student led start-up which connects busy food lovers with passionate home cooks. Users send any recipe and we connect them to a chef for the job. I was heavily involved in designing screens for the landing page and product, and I helped build many of the landing page pages. Specifically, I focused on implementing systems to support good responsive design! Designed in Figma, developed in React.</div>
               </ProjectSection>
+              <div className={styles.sectionPair}>
+                <ProjectSection sectionHeader="Links" sectionSize="h2" callout={false}>
+                  <ul>
+                    <li>
+                      <a href="https://easybites.us/">EasyBites.us</a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/easybites.us">Facebook</a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/easybites.us/">Instagram</a>
+                    </li>
+                  </ul>
+                </ProjectSection>
+                <div className={styles.flexGap}/>
+                <ProjectSection sectionHeader="Tools" sectionSize="h2" callout={false}>
+                  <div className={styles.row}>
+                    <Chip text="React w/ TypeScript" />
+                    <div className={styles.chipGap} />
+                    <Chip text="Figma | FigJam" />
+                    <div className={styles.chipGap} />
+                    <Chip text="CSS Modules" />
+                  </div>
+                  <Gap height={8} />
+                  <div className={styles.row}>
+                    <Chip text="Firebase" />
+                    <div className={styles.chipGap} />
+                    <Chip text="Adobe Illustrator" />
+                    <div className={styles.chipGap} />
+                    <Chip text="Next.js" />
+                  </div>
+                </ProjectSection>
+                <div className={styles.flexGap}/>
+              </div>
               <ProjectSection sectionHeader="Logo Design">
                 <div>After settling upon a name, our first design challenge was to decide upon a logo. We worked together as a team to create several candidates, and then spent a long time trying to choose among them (which always seems to be the hardest part).</div>
                 <Gap height={16} />
@@ -211,40 +245,6 @@ export default class Stuff extends React.Component<Props, State> {
                         width={1240}
                         height={744}/>
               </ProjectSection>
-              <div className={styles.sectionPair}>
-                <ProjectSection sectionHeader="Links" sectionSize="h2" callout={false}>
-                  <ul>
-                    <li>
-                      <a href="https://easybites.us/">EasyBites.us</a>
-                    </li>
-                    <li>
-                      <a href="https://www.facebook.com/easybites.us">Facebook</a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/easybites.us/">Instagram</a>
-                    </li>
-                  </ul>
-                </ProjectSection>
-                <div className={styles.flexGap}/>
-                <ProjectSection sectionHeader="Tools" sectionSize="h2" callout={false}>
-                  <div className={styles.row}>
-                    <Chip text="React w/ TypeScript" />
-                    <div className={styles.chipGap} />
-                    <Chip text="Figma | FigJam" />
-                    <div className={styles.chipGap} />
-                    <Chip text="CSS Modules" />
-                  </div>
-                  <Gap height={8} />
-                  <div className={styles.row}>
-                    <Chip text="Firebase" />
-                    <div className={styles.chipGap} />
-                    <Chip text="Adobe Illustrator" />
-                    <div className={styles.chipGap} />
-                    <Chip text="Next.js" />
-                  </div>
-                </ProjectSection>
-                <div className={styles.flexGap}/>
-              </div>
             </ProjectPage>
           </div>
         );
@@ -256,30 +256,8 @@ export default class Stuff extends React.Component<Props, State> {
                           date="January 2021"
                           color="#000000"
                           closePopup={() => this.closeProject()}>
-              <ProjectSection sectionHeader="TL;DR">
+              <ProjectSection sectionHeader="Description">
                 <div>A simple Solitaire game my brother and I created as a way to learn how to make games! We tried making it look cool, and stuff. But otherwise it&apos;s just solitaire lol. But it was really fun to make!</div>
-              </ProjectSection>
-              <ProjectSection sectionHeader="Screenshots">
-                <Image  src="/Page Media/Project Solitaire/title.png"
-                        alt="Solitaire title screen"
-                        width={958}
-                        height={554}/>
-                <Gap height={8} />
-                <Image  src="/Page Media/Project Solitaire/lose.png"
-                        alt="Solitaire gameplay"
-                        width={870}
-                        height={499}/>
-                <div>While I was gathering pictures for this website, I actually managed to win a game!</div>
-                <Gap height={16} />
-                <Image  src="/Page Media/Project Solitaire/win.png"
-                        alt="Solitaire victory"
-                        width={882}
-                        height={525} />
-                <Gap height={8} />
-                <Image  src="/Page Media/Project Solitaire/win2.png"
-                        alt="Solitaire victory 2"
-                        width={899}
-                        height={538} />
               </ProjectSection>
               <div className={styles.sectionPair}>
                 <ProjectSection sectionHeader="Links" sectionSize="h2" callout={false}>
@@ -304,6 +282,28 @@ export default class Stuff extends React.Component<Props, State> {
                 </ProjectSection>
                 <div className={styles.flexGap}/>
               </div>
+              <ProjectSection sectionHeader="Screenshots">
+                <Image  src="/Page Media/Project Solitaire/title.png"
+                        alt="Solitaire title screen"
+                        width={958}
+                        height={554}/>
+                <Gap height={8} />
+                <Image  src="/Page Media/Project Solitaire/lose.png"
+                        alt="Solitaire gameplay"
+                        width={870}
+                        height={499}/>
+                <div>While I was gathering pictures for this website, I actually managed to win a game!</div>
+                <Gap height={16} />
+                <Image  src="/Page Media/Project Solitaire/win.png"
+                        alt="Solitaire victory"
+                        width={882}
+                        height={525} />
+                <Gap height={8} />
+                <Image  src="/Page Media/Project Solitaire/win2.png"
+                        alt="Solitaire victory 2"
+                        width={899}
+                        height={538} />
+              </ProjectSection>
             </ProjectPage>
           </div>
         );
@@ -315,9 +315,27 @@ export default class Stuff extends React.Component<Props, State> {
                           date="December 2020"
                           color="#253367"
                           closePopup={() => this.closeProject()}>
-              <ProjectSection sectionHeader="TL;DR">
+              <ProjectSection sectionHeader="Description">
                 <div>NaireAtive is another cool student led startup from UW! I had the opportunity to design their logo for them, which was a very cool experience as it was the first time I&apos;d done client work like that.</div>
               </ProjectSection>
+              <div className={styles.sectionPair}>
+                <ProjectSection sectionHeader="Links" sectionSize="h2" callout={false}>
+                  <ul>
+                    <li>
+                      <a href="https://naireative.com/">NaireAtive&apos;s Website!</a>
+                    </li>
+                  </ul>
+                </ProjectSection>
+                <div className={styles.flexGap}/>
+                <ProjectSection sectionHeader="Tools" sectionSize="h2" callout={false}>
+                  <div className={styles.row}>
+                    <Chip text="Adobe Photoshop" />
+                    <div className={styles.chipGap} />
+                    <Chip text="Adobe Illustrator" />
+                  </div>
+                </ProjectSection>
+                <div className={styles.flexGap}/>
+              </div>
               <ProjectSection sectionHeader="Process">
                 <div>After meeting with the NaireAtive team and discussing what they kind of envisioned for a logo, I sketched a bunch of random ideas on index cards. One such design felt promising to me, which I made a rough digital version of:</div>
                 <Image  src="/Page Media/NaireAtive/NaireAtive-Logo-Draft.png"
@@ -358,24 +376,6 @@ export default class Stuff extends React.Component<Props, State> {
                         width={1795}
                         height={3116} />
               </ProjectSection>
-              <div className={styles.sectionPair}>
-                <ProjectSection sectionHeader="Links" sectionSize="h2" callout={false}>
-                  <ul>
-                    <li>
-                      <a href="https://naireative.com/">NaireAtive&apos;s Website!</a>
-                    </li>
-                  </ul>
-                </ProjectSection>
-                <div className={styles.flexGap}/>
-                <ProjectSection sectionHeader="Tools" sectionSize="h2" callout={false}>
-                  <div className={styles.row}>
-                    <Chip text="Adobe Photoshop" />
-                    <div className={styles.chipGap} />
-                    <Chip text="Adobe Illustrator" />
-                  </div>
-                  <Gap height={8} />
-                </ProjectSection>
-              </div>
             </ProjectPage>
           </div>
         );
@@ -387,56 +387,53 @@ export default class Stuff extends React.Component<Props, State> {
                           date="August 2020"
                           color="#FF53A8"
                           closePopup={() => this.closeProject()}>
-              <ProjectSection sectionHeader="TL;DR">
-                <div>EasyBites is a student led start-up which connects busy food lovers with passionate home cooks. Users send any recipe and we connect them to a chef for the job. I was heavily involved in designing screens for the landing page and product, and I helped build many of the landing page pages. Specifically, I focused on implementing systems to support good responsive design! Designed in Figma, developed in React.</div>
-              </ProjectSection>
-              <ProjectSection sectionHeader="Logo Design">
-                <div>After settling upon a name, our first design challenge was to decide upon a logo. We worked together as a team to create several candidates, and then spent a long time trying to choose among them (which always seems to be the hardest part).</div>
-                <Gap height={16} />
-                <div>Shown below are a couple screenshots of our voting process. We wanted to get the entire team&apos;s feedback and did a couple rounds of voting using FigJam (which had just launched, like the week before!)</div>
-                <Image  src="/Page Media/EasyBites/logo1.png"
-                        alt="Logo screenshot 1"
-                        width={1868}
-                        height={544}/>
-                <Gap height={8} />
-                <Image  src="/Page Media/EasyBites/logo2.png"
-                        alt="Logo screenshot 2"
-                        width={1833}
-                        height={619}/>
+              <ProjectSection sectionHeader="Description">
+                <div>My recreation of <a href="https://play.google.com/store/apps/details?id=com.ketchapp.jumpcar&hl=en_US&gl=US">Jump Car</a>, an old phone game my brother and friends used to play when we were very bored. I made all the art and coded the whole thing up in Unity!</div>
               </ProjectSection>
               <div className={styles.sectionPair}>
                 <ProjectSection sectionHeader="Links" sectionSize="h2" callout={false}>
                   <ul>
                     <li>
-                      <a href="https://easybites.us/">EasyBites.us</a>
+                      <a href="https://shogunlogan.itch.io/hop-vehicle">Hop Vehicle (lower your volume!)</a>
                     </li>
                     <li>
-                      <a href="https://www.facebook.com/easybites.us">Facebook</a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/easybites.us/">Instagram</a>
+                      <a href="https://github.com/logansw/Hop-Vehicle">GitHub</a>
                     </li>
                   </ul>
                 </ProjectSection>
                 <div className={styles.flexGap}/>
                 <ProjectSection sectionHeader="Tools" sectionSize="h2" callout={false}>
                   <div className={styles.row}>
-                    <Chip text="React w/ TypeScript" />
+                    <Chip text="Photoshop" />
                     <div className={styles.chipGap} />
-                    <Chip text="Figma | FigJam" />
+                    <Chip text="C#" />
                     <div className={styles.chipGap} />
-                    <Chip text="CSS Modules" />
-                  </div>
-                  <Gap height={8} />
-                  <div className={styles.row}>
-                    <Chip text="Firebase" />
-                    <div className={styles.chipGap} />
-                    <Chip text="Adobe Illustrator" />
-                    <div className={styles.chipGap} />
-                    <Chip text="Next.js" />
+                    <Chip text="Unity" />
                   </div>
                 </ProjectSection>
+                <div className={styles.flexGap}/>
               </div>
+              <ProjectSection sectionHeader="Screenshots">
+                <Image  src="/Page Media/Hop Vehicle/orange.png"
+                        alt="Dawn"
+                        width={1920}
+                        height={1080}/>
+                <Gap height={16} />
+                <Image  src="/Page Media/Hop Vehicle/blue.png"
+                        alt="Day"
+                        width={1920}
+                        height={1080}/>
+                <Gap height={16} />
+                <Image  src="/Page Media/Hop Vehicle/night.png"
+                        alt="Night"
+                        width={1920}
+                        height={1080}/>
+                <Gap height={16} />
+                <Image  src="/Page Media/Hop Vehicle/purple.png"
+                        alt="Dusk"
+                        width={1920}
+                        height={1080}/>
+              </ProjectSection>
             </ProjectPage>
           </div>
         );
@@ -448,56 +445,104 @@ export default class Stuff extends React.Component<Props, State> {
                           date="July 2020"
                           color="#E14C63"
                           closePopup={() => this.closeProject()}>
-              <ProjectSection sectionHeader="TL;DR">
-                <div>EasyBites is a student led start-up which connects busy food lovers with passionate home cooks. Users send any recipe and we connect them to a chef for the job. I was heavily involved in designing screens for the landing page and product, and I helped build many of the landing page pages. Specifically, I focused on implementing systems to support good responsive design! Designed in Figma, developed in React.</div>
-              </ProjectSection>
-              <ProjectSection sectionHeader="Logo Design">
-                <div>After settling upon a name, our first design challenge was to decide upon a logo. We worked together as a team to create several candidates, and then spent a long time trying to choose among them (which always seems to be the hardest part).</div>
-                <Gap height={16} />
-                <div>Shown below are a couple screenshots of our voting process. We wanted to get the entire team&apos;s feedback and did a couple rounds of voting using FigJam (which had just launched, like the week before!)</div>
-                <Image  src="/Page Media/EasyBites/logo1.png"
-                        alt="Logo screenshot 1"
-                        width={1868}
-                        height={544}/>
-                <Gap height={8} />
-                <Image  src="/Page Media/EasyBites/logo2.png"
-                        alt="Logo screenshot 2"
-                        width={1833}
-                        height={619}/>
+              <ProjectSection sectionHeader="Description">
+                <div>This was my first ever game jam game! It was for the 2020 GMTK game jam, where we had 48 hours to design and implement a game which followed the theme "out of control". I did it with a few like-minded students passionate about making games (one of which was my first ever computer science TA!). At the time of this project, my coding skills were still in their infancy, so I mostly focused on the art. This was a super fun project with very fun people, a very memorable experience to say the least. And our game performed decently well, receiving plenty of solid ratings!</div>
               </ProjectSection>
               <div className={styles.sectionPair}>
                 <ProjectSection sectionHeader="Links" sectionSize="h2" callout={false}>
                   <ul>
                     <li>
-                      <a href="https://easybites.us/">EasyBites.us</a>
-                    </li>
-                    <li>
-                      <a href="https://www.facebook.com/easybites.us">Facebook</a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/easybites.us/">Instagram</a>
+                      <a href="https://teamai.itch.io/super-spacebar">Super Spacebar</a>
                     </li>
                   </ul>
                 </ProjectSection>
                 <div className={styles.flexGap}/>
                 <ProjectSection sectionHeader="Tools" sectionSize="h2" callout={false}>
                   <div className={styles.row}>
-                    <Chip text="React w/ TypeScript" />
+                    <Chip text="Unity | C#" />
                     <div className={styles.chipGap} />
-                    <Chip text="Figma | FigJam" />
+                    <Chip text="Photoshop" />
                     <div className={styles.chipGap} />
-                    <Chip text="CSS Modules" />
-                  </div>
-                  <Gap height={8} />
-                  <div className={styles.row}>
-                    <Chip text="Firebase" />
-                    <div className={styles.chipGap} />
-                    <Chip text="Adobe Illustrator" />
-                    <div className={styles.chipGap} />
-                    <Chip text="Next.js" />
+                    <Chip text="Caffeine (jk)" />
                   </div>
                 </ProjectSection>
+                <div className={styles.flexGap}/>
               </div>
+              <ProjectSection sectionHeader="Ideation">
+                <div>We spent a long time trying to choose an idea to run with. My teammates were super creative and had done a few game jams before, so they had tons of great ideas, yet none of them quite fit the theme. While discussing, I sketched these random things (I barely remember what they were anymore):</div>
+                <Image  src="/Page Media/Super Spacebar/Brainstorming.jpg"
+                          alt="Brainstorming"
+                          width={4032}
+                          height={2268}/>
+                <div>I remember I left for dinner and in my half-hour absence, the team came up with the idea we ended up going with. The game would star a superhero who progressively becomes more and more powerful, but all of his powers are activated when the player presses spacebar! Very quickly, with so many powers, controlling him becomes very difficult, hence "out of control"!</div>
+              </ProjectSection>
+              <ProjectSection sectionHeader="Art">
+                <ProjectSection sectionHeader="Super Spacebar" sectionSize="h3" callout>
+                  <div>Around the time I worked on this project, I had recently rekindled my passion for animation, so I had a really fun time making the animations for our main protagonist, Super Spacebar. Here are some frames which were fun to make:</div>
+                  <Image  src="/Page Media/Super Spacebar/SpaceIdle0000.png"
+                          alt="Idle"
+                          width={300}
+                          height={300}/>
+                  <Image  src="/Page Media/Super Spacebar/SpaceJump0001.png"
+                          alt="Upwards Jump"
+                          width={300}
+                          height={400}/>
+                  <Image  src="/Page Media/Super Spacebar/SpaceJump0005.png"
+                          alt="Downwards Jump"
+                          width={300}
+                          height={400}/>
+                  <Image  src="/Page Media/Super Spacebar/SpaceRun0000.png"
+                          alt="Run"
+                          width={300}
+                          height={300}/>
+                  <Image  src="/Page Media/Super Spacebar/SpaceBlink0000.png"
+                          alt="Blink"
+                          width={450}
+                          height={450}/>
+                </ProjectSection>
+                <ProjectSection sectionHeader="Other Characters" sectionSize="h3" callout>
+                  <div>I also made a couple other characters for the game, one being an NPC who would give the player new powers, the other being a simple enemy. For some reason we decided the NPC would be a young child (I think it was previously placeholder art for some other purpose, but we decided to recycle it in this way).</div>
+                  <Image  src="/Page Media/Super Spacebar/Toddler0001.png"
+                          alt="Toddler"
+                          width={300}
+                          height={300}/>
+                  <Image  src="/Page Media/Super Spacebar/ShadowSlug.png"
+                          alt="Monster"
+                          width={300}
+                          height={300}/>
+                </ProjectSection>
+                <ProjectSection sectionHeader="Background" sectionSize="h3" callout>
+                  <div>For most of the drawings, I did little sketches beforehand. Most of them I've since thrown away, but I managed to find this sketch of what I thought the levels might look like:</div>
+                  <Image  src="/Page Media/Super Spacebar/Level Sketch.jpg"
+                          alt="Level sketch"
+                          width={4032}
+                          height={2268}/>
+                  <div>And here's how the background actually ended up!</div>
+                  <Image  src="/Page Media/Super Spacebar/Background.png"
+                          alt="Background"
+                          width={2400}
+                          height={1000}/>
+                </ProjectSection>
+              </ProjectSection>
+              <ProjectSection sectionHeader="Screenshots">
+                <div>Finally, here are some screenshots of gameplay!</div>
+                  <Image  src="/Page Media/Super Spacebar/title.png"
+                          alt="Title screen"
+                          width={1920}
+                          height={1080}/>
+                  <Image  src="/Page Media/Super Spacebar/start.png"
+                          alt="Level one"
+                          width={1920}
+                          height={1080}/>
+                  <Image  src="/Page Media/Super Spacebar/walls.png"
+                          alt="Level two"
+                          width={1920}
+                          height={1080}/>
+                  <Image  src="/Page Media/Super Spacebar/laser.png"
+                          alt="Level three"
+                          width={1920}
+                          height={1080}/>
+              </ProjectSection>
             </ProjectPage>
           </div>
         );
