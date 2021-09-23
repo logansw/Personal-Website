@@ -446,7 +446,7 @@ export default class Stuff extends React.Component<Props, State> {
                           color="#E14C63"
                           closePopup={() => this.closeProject()}>
               <ProjectSection sectionHeader="Description">
-                <div>This was my first ever game jam game! It was for the 2020 GMTK game jam, where we had 48 hours to design and implement a game which followed the theme "out of control". I did it with a few like-minded students passionate about making games (one of which was my first ever computer science TA!). At the time of this project, my coding skills were still in their infancy, so I mostly focused on the art. This was a super fun project with very fun people, a very memorable experience to say the least. And our game performed decently well, receiving plenty of solid ratings!</div>
+                <div>This was my first ever game jam game! It was for the 2020 GMTK game jam, where we had 48 hours to design and implement a game which followed the theme &quot;out of control&quot;. I did it with a few like-minded students passionate about making games (one of which was my first ever computer science TA!). At the time of this project, my coding skills were still in their infancy, so I mostly focused on the art. This was a super fun project with very fun people, a very memorable experience to say the least. And our game performed decently well, receiving plenty of solid ratings!</div>
               </ProjectSection>
               <div className={styles.sectionPair}>
                 <ProjectSection sectionHeader="Links" sectionSize="h2" callout={false}>
@@ -474,7 +474,7 @@ export default class Stuff extends React.Component<Props, State> {
                           alt="Brainstorming"
                           width={4032}
                           height={2268}/>
-                <div>I remember I left for dinner and in my half-hour absence, the team came up with the idea we ended up going with. The game would star a superhero who progressively becomes more and more powerful, but all of his powers are activated when the player presses spacebar! Very quickly, with so many powers, controlling him becomes very difficult, hence "out of control"!</div>
+                <div>I remember I left for dinner and in my half-hour absence, the team came up with the idea we ended up going with. The game would star a superhero who progressively becomes more and more powerful, but all of his powers are activated when the player presses spacebar! Very quickly, with so many powers, controlling him becomes very difficult, hence &quot;out of control&quot;!</div>
               </ProjectSection>
               <ProjectSection sectionHeader="Art">
                 <ProjectSection sectionHeader="Super Spacebar" sectionSize="h3" callout>
@@ -512,12 +512,12 @@ export default class Stuff extends React.Component<Props, State> {
                           height={300}/>
                 </ProjectSection>
                 <ProjectSection sectionHeader="Background" sectionSize="h3" callout>
-                  <div>For most of the drawings, I did little sketches beforehand. Most of them I've since thrown away, but I managed to find this sketch of what I thought the levels might look like:</div>
+                  <div>For most of the drawings, I did little sketches beforehand. Most of them I&apos;ve since thrown away, but I managed to find this sketch of what I thought the levels might look like:</div>
                   <Image  src="/Page Media/Super Spacebar/Level Sketch.jpg"
                           alt="Level sketch"
                           width={4032}
                           height={2268}/>
-                  <div>And here's how the background actually ended up!</div>
+                  <div>And here&apos;s how the background actually ended up!</div>
                   <Image  src="/Page Media/Super Spacebar/Background.png"
                           alt="Background"
                           width={2400}
